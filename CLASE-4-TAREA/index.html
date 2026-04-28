@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de adopción</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Adopta un nuevo amigo</h1>
+        <p>¡Bienvenido a nuestra página de adopción!</p>
+        <img class="foto-perrito" src="https://cdn.shopify.com/s/files/1/0468/5460/2913/files/carta-de-adopcion-de-perros.jpg?v=1605174850"
+         alt="Perrito">
+    </header>
+    <main>
+        <form>
+            <section>
+             <div>
+                <h2>Datos personales del adoptante</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+             </div>
+            </section>
+
+            <section>
+             <div>
+                <h2>Información sobre tu hogar</h2>
+                <label for="vivienda">¿Vivís en casa o departamento?</label>
+                <select id="vivienda" name="vivienda">
+                    <option value="">Seleccionar...</option>
+                    <option value="casa">Casa</option>
+                    <option value="departamento">Departamento</option>
+                </select>
+             </div>
+
+                <label for="patio">¿Tenes patio?</label>
+                <input type="radio" name="patio" id="patio-si" value="si">
+                <label for="patio-si">Sí</label>
+                
+                <input type="radio" name="patio" id="patio-no" value="no">
+                <label for="patio-no">No</label>
+
+                <label for="mascotas">¿Ya tenes otras mascotas?</label>
+                <input type="checkbox" id="perro" name="mascotas" value="perro">
+                <label for="perro">Perro</label>
+
+                <input type="checkbox" id="gato" name="mascotas" value="gato">
+                <label for="gato">Gato</label>
+
+                <input type="checkbox" id="otro" name="mascotas" value="otro">
+                <label for="otro">Otro</label>
+            </section>
+            <section>
+                <h2>¿Que tipo de mascotas estás buscando adoptar?</h2>
+                <label for="perro">Perro</label>
+                <input type="radio" name="mascota" id="perro" value="perro">
+                <label for="gato">Gato</label>
+                <input type="radio" name="mascota" id="gato" value="gato">
+            </section>
+            <section>
+                <h2>¿Por qué quieres adoptar una mascota?</h2>
+                <textarea id="motivo" name="motivo" rows="4" cols="50" required></textarea>
+            </section>
+
+              <h2>Si hay algo que deseas agregar...</h2>
+            <textarea
+             id="comentarios"
+             name="comentarios"
+             rows="4"
+             cols="30"
+             required
+           ></textarea>
+
+           <button type="submit">Enviar solicitud de adopción</button>
+        </form>
+    </main>
+</body>
+</html>

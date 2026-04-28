@@ -1,0 +1,26 @@
+header {
+    background-color: rgb(230, 176, 126);
+}
+
+h1 {
+    color: rgb(245, 112, 79);
+    font-style: italic;
+}
+
+.foto-perrito {
+ width:200px; /*Ancho del contenido*/
+ height: auto;/*Alto del contenido*/
+ padding:10px; /*Espacio/distancia entre el contenido y el borde*/
+ margin:10px; /*Espacio entre el borde y otros elementos */
+ /*En el borde se incluye grosor, estilo y color */
+ border:10px solid rgb(224, 124, 66); /*Borde del elemento*/
+}
+
+body {
+    background-color: rgb(255, 196, 156);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
