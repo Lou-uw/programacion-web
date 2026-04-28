@@ -1,0 +1,41 @@
+/*Concepto de caja*/
+/*Es un concepto fundamental en css que describe como 
+  se calculan las dimensiones y el espacio ocupado por los
+  elementos en una pagina web*/
+
+
+.foto-perfil {
+ width:200px; /*Ancho del contenido*/
+ height: auto;/*Alto del contenido*/
+ padding:10px; /*Espacio/distancia entre el contenido y el borde*/
+ margin:10px; /*Espacio entre el borde y otros elementos */
+ /*En el borde se incluye grosor, estilo y color */
+ border:2px solid rgb(226, 21, 21); /*Borde del elemento*/
+}
+
+.contenedor-lista {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos de la lista */
+}
+.botones-header {
+    border: 2px solid rgb(255, 252, 252);
+    border-radius: 40px;
+    background-color: rgb(235, 170, 170);
+    height: 40px;
+}
+.botones-header:hover {
+    background-color: rgb(238, 95, 95);
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none; /*Elimina los puntos de la lista */
+}
+
+

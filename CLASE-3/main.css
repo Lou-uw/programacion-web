@@ -1,0 +1,78 @@
+
+html {
+    scroll-behavior: smooth; /* desplazamiento suave*/
+}
+
+.foto-perfil {
+ width:200px; /*Ancho del contenido*/
+ height: auto;/*Alto del contenido*/
+ padding:10px; /*Espacio/distancia entre el contenido y el borde*/
+ margin:10px; /*Espacio entre el borde y otros elementos */
+ /*En el borde se incluye grosor, estilo y color */
+ border:10px solid rgb(224, 66, 158); /*Borde del elemento*/
+}
+
+.contenedor-lista {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos de la lista */
+}
+.botones-header {
+    border: 5px solid rgb(241, 185, 216);
+    border-radius: 40px;
+    background-color: rgb(240, 134, 196);
+    height: 40px;
+}
+.botones-header:hover {
+    background-color: rgb(240, 105, 195);
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 202, 226);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+a {
+     text-decoration: none;
+}
+
+.text {
+    text-align: center; /*centra el texto dentro del elemento*/
+    line-height: 1.5 ; /*Ajusta el espacio entre lineas*/
+    font-style: italic;
+    text-decoration: wavy underline rgb(241, 110, 202);
+    font-weight: 200; /*ajusta el grosor de texto*/
+}
+
+p {
+    line-height: 1.5;
+}
+
+.imagenes{
+    width:200px; /*Ancho del contenido*/
+    height: auto; /*Alto del contenido*/
+}
+
+li {
+    list-style: none; /*Elimina los puntos de la lista */
+}

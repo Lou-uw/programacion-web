@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Heladeria Dolce</h1>
+        <p>Inice su pedido online</p>
+    </header>
+     <main>
+        <form>
+            <section>
+                <h2>Datos del cliente</h2>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id ="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id ="direccion" name="direccion"required>
+
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono" name="telefono" required>
+
+            </section>
+            <section>
+                <h3>Tipos de helado</h3>
+                <label for="cucurucho">Cucurucho</label>
+                <input type="radio" id="cucurucho" name="cucurucho" value="cucurucho">
+
+                <label for="vasito">Vasito</label>
+                <input type="radio" id="vasito" name="vasito" value="vasito">
+
+                <label for="paletas">Paletas</label>
+                <input type="radio" id="paletas" name="paletas" value="paletas">
+            </section>
+            <section>
+                <h3>Sabores para cucurucho/vasito</h3>
+                <label for="dulce-de-leche">Dulce de leche</label>
+                <input type="checkbox" id="dulce-de-leche" name="dulce-de-leche">
+
+                <label for="frutilla">Frutilla</label>
+                <input type="checkbox" id="frutilla" name="frutilla">
+
+                <label for="tramontana">Tramontana</label>
+                <input type="checkbox" id="tramontana" name="tramontana">
+
+                <label for="chocolate-blanco">Chocolate blanco</label>
+                <input type="checkbox" id="chocolate-blanco" name="chocolate-blanco">
+            </section>
+            <section>
+                <h3>Sabores de paletas</h3>
+                 <label for="palito-bombon">Palito bombon</label>
+                 <input type="checkbox" id="palito-bombon" name="palito-bombon">
+
+                 <label for="limon">Limon</label>
+                 <input type="checkbox" id="limon" name="limon">
+
+                 <label for="naranja">Naranja</label>
+                 <input type="checkbox" id="naranja" name="naranja">
+            </section>
+            <section>
+                
+            </section>
+            <h2>Comentarios</h2>
+            <textarea
+             id="comentarios"
+             name="comentarios"
+             rows="4"
+             cols="30"
+             required
+           ></textarea>
+
+        <!--siempre que haya un formulario vamos a tener un boton type submit-->
+        <button type="submit">Enviar pedido</button>
+        </form>
+     </main>
+</body>
+</html>

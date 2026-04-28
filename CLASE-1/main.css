@@ -1,0 +1,43 @@
+/*Hoja de estilos css:)*/
+
+/*tipos de selectores*/
+/*selector de etiqueta*/
+h1 {
+    /*propiedad: valor;*/
+    color: rgb(248, 186, 93); /*cambia color letra*/
+    background-color: rgb(255, 255, 255); /*cambia color fondo de h1*/
+}
+body {
+  background-color: rgb(235, 149, 216); /*cambia el fondo de toda la pagina*/
+}
+
+/*selector de clase*/
+/*generar clases con las propiedades deseadas*/
+/*solo se pueden usar en elementos que tengan esa clase*/
+.tipo-de-letra {
+    font-family: cursive; /*tipografia*/
+    font-size: 20px; /*tamaño letra*/
+
+}
+
+/*selector de id*/
+/*idealmente se pueden usar solo en un elemento de la pagina*/
+#titulo-principal {
+    color: blue;
+}
+
+/*display:flex*/
+/*hace que los elementos hijos se acomoden en fila o columna 
+dependiendo el valor de flex-direction */
+/*siempre el flex modifica contenedores*/
+.contenedor {
+ display: flex;
+ justify-content: center;
+}
+/*justify-content:alinea los elementos hijos horizontalmente*/
+/*flex-start alinea a la izquierda*/
+/*flex-end alinea a la derecha*/
+/*center: alinea el centro*/
+/*space-between: distribuye entre los elementos*/
+/*space-around: distribuye el espacio alrededor de los elementos*/
+/*space-evenly: distribuye el espacio de manera uniforme entre los elementos*/
