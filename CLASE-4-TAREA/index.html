@@ -15,8 +15,8 @@
     </header>
     <main>
         <form>
-            <section>
-             <div>
+            <section class="dato">
+        
                 <h2>Datos personales del adoptante</h2>
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -29,11 +29,10 @@
 
                 <label for="telefono">Telefono</label>
                 <input type="tel" id="telefono" name="telefono" required>
-             </div>
+
             </section>
 
             <section>
-             <div>
                 <h2>Información sobre tu hogar</h2>
                 <label for="vivienda">¿Vivís en casa o departamento?</label>
                 <select id="vivienda" name="vivienda">
@@ -41,7 +40,6 @@
                     <option value="casa">Casa</option>
                     <option value="departamento">Departamento</option>
                 </select>
-             </div>
 
                 <label for="patio">¿Tenes patio?</label>
                 <input type="radio" name="patio" id="patio-si" value="si">
@@ -50,7 +48,7 @@
                 <input type="radio" name="patio" id="patio-no" value="no">
                 <label for="patio-no">No</label>
 
-                <label for="mascotas">¿Ya tenes otras mascotas?</label>
+                <br><label for="mascotas">¿Ya tenes otras mascotas?</label>
                 <input type="checkbox" id="perro" name="mascotas" value="perro">
                 <label for="perro">Perro</label>
 

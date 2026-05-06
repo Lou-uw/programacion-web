@@ -21,12 +21,13 @@ button {
 }
 
 header {
-    background-color: rgb(230, 176, 126);
+  background-color: #e63946;
+  color: white;
+  padding: 20px 32px;
 }
 
-h1 {
-    color: rgb(245, 112, 79);
-    font-style: italic;
+header h1 {
+  font-size: 1.8rem;
 }
 
 form {
@@ -36,19 +37,6 @@ form {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
-}
-
-.foto-perrito {
- width:200px; /*Ancho del contenido*/
- height: auto;/*Alto del contenido*/
- padding:10px; /*Espacio/distancia entre el contenido y el borde*/
- margin:10px; /*Espacio entre el borde y otros elementos */
- /*En el borde se incluye grosor, estilo y color */
- border:10px solid rgb(224, 124, 66); /*Borde del elemento*/
-}
-
-body {
-    background-color: rgb(255, 196, 156);
 }
 
 section {
@@ -92,7 +80,7 @@ input[type="number"]:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #e78534;
+  border-color: #e63946;
   background-color: #fff;
   box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
 }
@@ -116,7 +104,7 @@ textarea {
 button[type="submit"] {
   width: 100%;
   padding: 14px;
-  background-color: #f17933;
+  background-color: #e63946;
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -127,7 +115,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #c16112;
+  background-color: #c1121f;
 }
 
 footer {
