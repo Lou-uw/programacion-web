@@ -1,0 +1,19 @@
+header {
+    background-color: rgb(228, 139, 24);
+    color: blanchedalmond;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: rgb(207, 205, 203);
+}
+
+form {
+    padding: 30px;
+    border: 2px solid rgb(228, 139, 24);
+    border-radius: 12px;
+    max-width: 620px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 0 2px rgb(228, 139, 24);
+}
