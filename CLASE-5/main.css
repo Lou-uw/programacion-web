@@ -1,11 +1,14 @@
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f0f0;
+}
 header {
     background-color: rgb(228, 139, 24);
     color: blanchedalmond;
-}
-body {
-    font-family: sans-serif;
-    font-size: 16px;
-    background-color: rgb(207, 205, 203);
 }
 
 form {

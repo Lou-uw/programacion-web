@@ -18,7 +18,7 @@
           <h2>Datos de cliente</h2>
           <label for="nombre">Nombre</label>
           <!--el type nos indica lo que podemos ingresar en el input-->
-          <input type="text" id="nombre" name="nombre" />
+          <input type="text" id="nombre" name="nombre" required />
           <label for="telefono">Telefono</label>
           <input type="tel" id="telefono" name="telefono" />
           <label for="email">Email</label>
@@ -31,8 +31,17 @@
 
           <input type="radio" id="chica" name="tamaño" value="chica" />
           <label for="chica">Chica</label>
+
+          <input type="radio" id="mediana" name="mediana" value="mediana" />
+          <label for="mediana">Mediana</label>
+          
           <input type="radio" id="grande" name="tamaño" value="grande" />
           <label for="grande">Grande</label>
+        </section>
+        <section>
+          <h2>Cantidad</h2>
+          <label for="cantidad">Cantidad</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" required>
         </section>
         <section>
           <h2>Ingredientes</h2>
@@ -74,6 +83,9 @@
         <!--siempre que haya un formulario vamos a tener un boton type submit-->
         <button type="submit">Enviar pedido</button>
       </form>
+      <p id="mensaje"></p>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
