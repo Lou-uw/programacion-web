@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Explorer</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Explorer</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1>Anime Explorer</h1>
-    </header>
-    
-        <!--grilla de las cartas-->
-      <div id="grilla" class="grilla"></div>
 
-      <script src="script.js"></script>
+  <h1>Lista de Animes</h1>
+
+  <!-- Input para búsqueda por título -->
+  <input type="text" id="busqueda" placeholder="Buscar por título...">
+  
+  <!-- Select para filtrar por género -->
+  <select id="genero">
+    <option value="">Todos los géneros</option>
+    <option value="Acción">Acción</option>
+    <option value="Fantasia oscura">Fantasia oscura</option>
+    <option value="Thriller psicológico">Thriller psicológico</option>
+    <option value="Deporte">Deporte</option>
+    <option value="Drama psicologico">Drama psicologico</option>
+  </select>
+
+  <!-- Contador de resultados -->
+  <div id="contador"></div>
+
+  <!-- Contenedor de las cards de anime -->
+  <div id="grilla"></div>
+  <script src="script.js"></script>
+
 </body>
+</html>
