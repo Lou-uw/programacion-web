@@ -88,5 +88,67 @@ const valorInventario = productos
 .filter(function(producto){
   return producto.stock > 0;
 })
-.reduce(function())
+.reduce(function(acumulador,producto){
+  return acumulador + (producto.precio * producto.stock);
+})
 console.log(valorInventario);
+
+//EJERCICIO 8 -- En un solo encadenamiento de métodos, obtené un array con los nombres de los productos que cumplen TODAS estas condiciones:
+// Están activos (`activo: true`)
+// Tienen stock disponible (`stock > 0`)
+// Su precio es menor a $20.000
+
+const productosFiltrados = productos
+.filter(function(producto){
+  return producto.activo === true && producto.stock > 0 && producto.precio < 20000; 
+})
+.map(function(producto){
+  return producto.nombre;
+}) 
+console.log(productosFiltrados);
+
+//EJERCICIO 9 -- Usando reduce, creá un objeto que tenga la cantidad de productos por categoría. Solo contá los activos.
+const productosPorCategoria = productos
+.filter(function(producto){
+  return producto.activo === true;
+})
+.reduce(function(acumulador, producto){
+  const porCategoria = producto.categoria;
+  if(acumulador[porCategoria]){
+    acumulador[porCategoria]++;
+  } else {
+    acumulador[porCategoria] = 1;
+  }
+  return acumulador;
+}, {});
+
+console.log(cantidadPorCategoria);
+
+//EJERCICIO 10  -- Crea una funcion resumirInventario(productos)que devuelva un objeto con:
+//total`: cantidad total de productos
+//activos`: cantidad de productos activos
+//sinStock`: cantidad de productos sin stock
+//valorTotal`: suma de `precio * stock` de todos los productos
+//categorias`: objeto con el conteo por categoría (como el ejercicio 9, pero sin filtro de activos)
+const resumirInventario = (productos) => {
+  const total = productos.length;
+  const activos = productos.filter(producto => producto.activo).length;   
+  const sinStock = productos.filter(producto => producto.stock === 0).length;
+  const valorTotal = productos.reduce((acumulador, producto) => acumulador + (producto.precio * producto.stock), 0);  
+  const categorias = productos.reduce((acumulador, producto) => {
+    const categoria = producto.categoria;
+    if (acumulador[categoria]) {
+      acumulador[categoria]++;      
+    } else {
+      acumulador[categoria] = 1;      
+    }
+    return acumulador;
+  }, {});
+  return {
+    total,
+    activos,
+    sinStock,
+    valorTotal,
+    categorias
+  };
+}
